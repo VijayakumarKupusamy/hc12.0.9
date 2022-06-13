@@ -1,0 +1,37 @@
+﻿[
+  {
+    "Message": "The specified directive is not valid the current location.",
+    "Code": null,
+    "Path": null,
+    "Locations": [
+      {
+        "Line": 3,
+        "Column": 29
+      }
+    ],
+    "Extensions": {
+      "specifiedBy": "http://spec.graphql.org/October2021/#sec-Directives-Are-In-Valid-Locations"
+    },
+    "Exception": null,
+    "SyntaxNode": {
+      "Kind": "Directive",
+      "Location": {
+        "Start": 75,
+        "End": 101,
+        "Line": 3,
+        "Column": 29
+      },
+      "Name": {
+        "Kind": "Name",
+        "Location": {
+          "Start": 76,
+          "End": 101,
+          "Line": 3,
+          "Column": 30
+        },
+        "Value": "onQuery"
+      },
+      "Arguments": []
+    }
+  }
+]

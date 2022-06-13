@@ -1,0 +1,16 @@
+﻿{
+  "Query": {
+    "Text": "{ foo }"
+  },
+  "QueryId": null,
+  "QueryHash": null,
+  "OperationName": null,
+  "VariableValues": null,
+  "Extensions": null,
+  "ContextData": {
+    "three": "baz"
+  },
+  "Services": null,
+  "InitialValue": null,
+  "AllowedOperations": null
+}

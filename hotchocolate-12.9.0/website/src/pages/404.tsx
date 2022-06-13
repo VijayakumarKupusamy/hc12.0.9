@@ -1,0 +1,71 @@
+import React, { FC } from "react";
+import styled from "styled-components";
+import { Layout } from "../components/layout";
+import { SEO } from "../components/misc/seo";
+
+const NotFoundPage: FC = () => (
+  <Layout>
+    <SEO title="404: Not found" />
+    <Container>
+      <Article>
+        <Title>NOT FOUND</Title>
+        <Content>
+          <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+        </Content>
+      </Article>
+    </Container>
+  </Layout>
+);
+
+export default NotFoundPage;
+
+const Container = styled.div`
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: row;
+  width: 100%;
+
+  @media only screen and (min-width: 860px) {
+    padding: 20px 10px 0;
+    max-width: 820px;
+  }
+`;
+
+const Article = styled.article`
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+
+  @media only screen and (min-width: 860px) {
+    border-radius: var(--border-radius);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  }
+`;
+
+const Title = styled.h1`
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-size: 2em;
+
+  @media only screen and (min-width: 860px) {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+`;
+
+const Content = styled.div`
+  > * {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  @media only screen and (min-width: 860px) {
+    > * {
+      padding-right: 50px;
+      padding-left: 50px;
+    }
+  }
+`;

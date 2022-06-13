@@ -1,0 +1,9 @@
+<Project>
+  <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)..\'))" />
+
+  <PropertyGroup>
+    <PackageTags>DataLoader Batching Caching GraphQL ChilliCream Facebook</PackageTags>
+    <PackageIcon>greendonut-signet.png</PackageIcon>
+  </PropertyGroup>
+
+</Project>

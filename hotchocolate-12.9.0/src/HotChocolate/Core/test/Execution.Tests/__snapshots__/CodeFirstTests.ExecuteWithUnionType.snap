@@ -1,0 +1,12 @@
+﻿{
+  "data": {
+    "fooOrBar": [
+      {
+        "nameFoo": "foo"
+      },
+      {
+        "nameBar": "bar"
+      }
+    ]
+  }
+}

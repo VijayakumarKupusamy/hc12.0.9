@@ -1,0 +1,18 @@
+﻿{
+  "message": "The field `cde` must be implement by object type `Foo`.",
+  "type": "Foo",
+  "extensions": {
+    "implementedField": "cde",
+    "specifiedBy": "http://spec.graphql.org/October2021/#sec-Objects.Type-Validation"
+  }
+}
+
+{
+  "message": "The field `cde` must be implement by object type `Foo`.",
+  "type": "Foo",
+  "extensions": {
+    "implementedField": "cde",
+    "specifiedBy": "http://spec.graphql.org/October2021/#sec-Objects.Type-Validation"
+  }
+}
+

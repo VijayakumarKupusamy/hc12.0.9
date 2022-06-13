@@ -1,0 +1,30 @@
+﻿{
+  "Label": null,
+  "Path": null,
+  "Data": {
+    "foos": [
+      {
+        "bar": "aa"
+      },
+      {
+        "bar": "ba"
+      },
+      {
+        "bar": "ca"
+      },
+      {
+        "bar": "ab"
+      },
+      {
+        "bar": "ac"
+      },
+      {
+        "bar": "ad"
+      }
+    ]
+  },
+  "Errors": null,
+  "Extensions": null,
+  "ContextData": null,
+  "HasNext": null
+}

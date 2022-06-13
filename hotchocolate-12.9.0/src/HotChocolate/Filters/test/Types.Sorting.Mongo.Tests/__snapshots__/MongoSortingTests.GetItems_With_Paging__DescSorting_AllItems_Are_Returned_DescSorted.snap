@@ -1,0 +1,20 @@
+﻿{
+  "Label": null,
+  "Path": null,
+  "Data": {
+    "paging": {
+      "nodes": [
+        {
+          "foo": "def"
+        },
+        {
+          "foo": "abc"
+        }
+      ]
+    }
+  },
+  "Errors": null,
+  "Extensions": null,
+  "ContextData": null,
+  "HasNext": null
+}
