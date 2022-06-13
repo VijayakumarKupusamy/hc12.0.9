@@ -1,0 +1,18 @@
+﻿{
+  "Label": null,
+  "Path": null,
+  "Data": {
+    "items": [
+      {
+        "bar": 2
+      },
+      {
+        "bar": 1
+      }
+    ]
+  },
+  "Errors": null,
+  "Extensions": null,
+  "ContextData": null,
+  "HasNext": null
+}

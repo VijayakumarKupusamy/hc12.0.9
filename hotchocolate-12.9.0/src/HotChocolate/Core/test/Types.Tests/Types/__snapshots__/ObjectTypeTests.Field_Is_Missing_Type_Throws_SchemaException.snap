@@ -1,0 +1,6 @@
+﻿[
+  {
+    "Message": "Unable to infer or resolve the type of field abc.def. Try to explicitly provide the type like the following: `descriptor.Field(\"field\").Type<List<StringType>>()`.",
+    "Code": "TS_NO_FIELD_TYPE"
+  }
+]

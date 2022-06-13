@@ -1,0 +1,10 @@
+﻿{
+  "errors": [
+    {
+      "message": "Foo cannot deserialize the given value.",
+      "path": [
+        "a"
+      ]
+    }
+  ]
+}

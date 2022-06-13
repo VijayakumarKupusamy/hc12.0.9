@@ -1,0 +1,17 @@
+﻿{
+  "errors": [
+    {
+      "message": "The GraphQL document has an execution depth of 6 which exceeds the max allowed execution depth of 3.",
+      "locations": [
+        {
+          "line": 2,
+          "column": 17
+        }
+      ],
+      "extensions": {
+        "allowedExecutionDepth": 3,
+        "detectedExecutionDepth": 6
+      }
+    }
+  ]
+}

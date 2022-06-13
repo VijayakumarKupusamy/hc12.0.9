@@ -1,0 +1,10 @@
+﻿{
+  "errors": [
+    {
+      "message": "The GraphQL request execution was canceled.",
+      "extensions": {
+        "code": "HC0049"
+      }
+    }
+  ]
+}

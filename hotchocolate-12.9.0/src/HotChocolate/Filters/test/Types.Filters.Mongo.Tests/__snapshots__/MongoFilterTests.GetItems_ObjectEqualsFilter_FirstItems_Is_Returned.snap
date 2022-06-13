@@ -1,0 +1,19 @@
+﻿{
+  "Label": null,
+  "Path": null,
+  "Data": {
+    "items": [
+      {
+        "nested": {
+          "nested": {
+            "foo": "abc"
+          }
+        }
+      }
+    ]
+  },
+  "Errors": null,
+  "Extensions": null,
+  "ContextData": null,
+  "HasNext": null
+}

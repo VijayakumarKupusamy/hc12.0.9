@@ -1,0 +1,17 @@
+﻿{
+  "Label": null,
+  "Path": null,
+  "Data": {
+    "list": [
+      {
+        "fooNested": {
+          "bar": "a"
+        }
+      }
+    ]
+  },
+  "Errors": null,
+  "Extensions": null,
+  "ContextData": null,
+  "HasNext": null
+}
