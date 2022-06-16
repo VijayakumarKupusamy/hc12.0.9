@@ -13,7 +13,7 @@ internal class StitchingCacheMiddleware
 {
     private readonly RequestDelegate _next; 
 
-    private static ConcurrentDictionary<string, IExecutionResult> inMemCache = new ConcurrentDictionary<string, IExecutionResult>();
+    private static ConcurrentDictionary<string, IReadOnlyDictionary<string, object?>> inMemCache = new ConcurrentDictionary<string, IReadOnlyDictionary<string, object?>>();
     
     public StitchingCacheMiddleware(
               RequestDelegate next)
@@ -23,20 +23,21 @@ internal class StitchingCacheMiddleware
 
     public async ValueTask InvokeAsync(IRequestContext context)
     {
-        if (inMemCache.TryGetValue(context?.DocumentId, out IExecutionResult? cachedResult))
+        if (inMemCache.TryGetValue(context?.DocumentId, out IReadOnlyDictionary<string, object?> cachedResult))
         {
-            //IReadOnlyDictionary<string, object?> cachedData = JObject.Parse(cachedResult).ToDictionary();
-            //context.Result = QueryResultBuilder.New()
-            //                .SetData(cachedData["data"] as IReadOnlyDictionary<string, object?>)
-            //                .Create();
-            context.Result = cachedResult;
+            
+            IReadOnlyDictionary<string, object?> cachedData = cachedResult;
+            context.Result = QueryResultBuilder.New()
+                            .SetData(cachedData as IReadOnlyDictionary<string, object?>)
+                            .Create();
+            //context.Result = cachedResult;
         }
         else
         {         
 
             await _next.Invoke(context).ConfigureAwait(false);
-
-            inMemCache.TryAdd(context.DocumentId, context.Result);
+            
+            inMemCache.TryAdd(context.DocumentId, (context.Result as QueryResult).Data);
         }
 
     }

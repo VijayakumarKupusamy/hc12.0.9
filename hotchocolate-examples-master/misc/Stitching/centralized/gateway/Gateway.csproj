@@ -5,9 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\..\hotchocolate-12.9.0\hotchocolate-12.9.0\src\HotChocolate\AspNetCore\src\AspNetCore\HotChocolate.AspNetCore.csproj" />
-    <ProjectReference Include="..\..\..\..\..\..\hotchocolate-12.9.0\hotchocolate-12.9.0\src\HotChocolate\Stitching\src\Stitching\HotChocolate.Stitching.csproj" />
-
+    <ProjectReference Include="..\..\..\..\..\hotchocolate-12.9.0\src\HotChocolate\AspNetCore\src\AspNetCore\HotChocolate.AspNetCore.csproj" />
+    <ProjectReference Include="..\..\..\..\..\hotchocolate-12.9.0\src\HotChocolate\Stitching\src\Stitching\HotChocolate.Stitching.csproj" />
   </ItemGroup>
 
 </Project>
